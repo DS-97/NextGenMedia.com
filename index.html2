@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Media | Digital Marketing Agency</title>
+    <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #00cec9;
+            --light: #f9f9f9;
+        }
+        body { font-family: 'Helvetica Neue', sans-serif; margin: 0; color: var(--primary); background: var(--light); }
+        
+        /* Navigation */
+        nav { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: white; }
+        .logo { font-weight: bold; font-size: 1.5rem; letter-spacing: 1px; }
+
+        /* Hero Section */
+        header { 
+            height: 80vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center;
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), 
+                        url('IMG_4188.PNG'); /* This uses your uploaded image as a background */
+            background-size: cover;
+            background-position: center;
+        }
+        h1 { font-size: 4rem; margin-bottom: 10px; text-transform: uppercase; }
+        p { font-size: 1.2rem; color: #636e72; margin-bottom: 30px; }
+        .btn { padding: 15px 40px; background: var(--primary); color: white; text-decoration: none; border-radius: 50px; transition: 0.3s; }
+        .btn:hover { background: var(--accent); }
+
+        /* Services */
+        .services { padding: 80px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        h3 { color: var(--accent); }
+
+        /* Portfolio Image */
+        .portfolio-img { width: 90%; max-width: 800px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); margin: 50px 0; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">NEXTGEN MEDIA</div>
+        <a href="#" class="btn" style="padding: 10px 20px;">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Elevate Your Brand</h1>
+        <p>Premium Digital Marketing & High-End Visual Content</p>
+        <a href="#work" class="btn">View Our Work</a>
+    </header>
+
+    <section id="work" style="text-align: center; padding: 50px 0;">
+        <h2>Our Latest Edit</h2>
+        <img src="IMG_4188.PNG" alt="NextGen Media Work" class="portfolio-img">
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <h3>Content Creation</h3>
+            <p>Professional photo editing, "fancy" dress retouching, and HD visual storytelling.</p>
+        </div>
+        <div class="card">
+            <h3>Brand Strategy</h3>
+            <p>Modern marketing techniques to put your brand in the spotlight.</p>
+        </div>
+        <div class="card">
+            <h3>Social Growth</h3>
+            <p>Expanding your reach with high-quality, glowing aesthetics.</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: #b2bec3;">
+        &copy; 2026 NextGen Media Digital Agency
+    </footer>
+
+</body>
+</html>
