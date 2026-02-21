@@ -51,7 +51,7 @@
     </nav>
 
     <header>
-        <h1>Elevate Your Brand</h1>
+        <h1><span class="typing"></span></h1>
         <p>Premium Digital Marketing & High-End Visual Content</p>
         <a href="#work" class="btn">View Our Work</a>
             
@@ -105,6 +105,44 @@
    <footer style="text-align: center; padding: 40px; color: #b2bec3;">
         &copy; 2026 NextGen Media Digital Agency
     </footer>
+
+<script>
+const words = ["Elevate Your Brand", "Grow With Strategy", "Turn Scrolls Into Sales"];
+let i = 0;
+let timer;
+
+function typingEffect() {
+    let word = words[i].split("");
+    var loopTyping = function() {
+        if(word.length > 0) {
+            document.querySelector(".typing").innerHTML += word.shift();
+        } else {
+            deletingEffect();
+            return false;
+        };
+        timer = setTimeout(loopTyping, 100);
+    };
+    loopTyping();
+};
+
+function deletingEffect() {
+    let word = words[i].split("");
+    var loopDeleting = function() {
+        if(word.length > 0) {
+            word.pop();
+            document.querySelector(".typing").innerHTML = word.join("");
+        } else {
+            i = (i + 1) % words.length;
+            typingEffect();
+            return false;
+        };
+        timer = setTimeout(loopDeleting, 50);
+    };
+    loopDeleting();
+};
+
+typingEffect();
+</script>
 
 </body>
 </html>
